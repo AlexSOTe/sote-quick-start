@@ -14,21 +14,22 @@
     "preview:prod": "vite preview --mode production"
   },
   "dependencies": {
-    "axios": "^0.26.0",
+    "axios": "^0.24.0",
     "sote-tools": "^1.0.6",
-    "vant": "^3.4.5",
-    "vue": "^3.2.31",
+    "vant": "^3.3.1",
+    "vue": "^3.2.16",
     "vue-router": "^4.0.12",
     "vuex": "^4.0.2"
   },
   "devDependencies": {
-    "@vitejs/plugin-vue": "^2.2.2",
-    "sass": "^1.49.8",
-    "typescript": "^4.5.5",
-    "unplugin-vue-components": "^0.17.20",
-    "vite": "^2.8.4",
-    "vite-plugin-html": "^3.0.6",
-    "vue-tsc": "^0.31.4",
+    "@types/node": "^17.0.21",
+    "@vitejs/plugin-vue": "^1.9.3",
+    "sass": "^1.43.5",
+    "typescript": "^4.4.3",
+    "unplugin-vue-components": "^0.17.2",
+    "vite": "^2.6.4",
+    "vite-plugin-html": "^2.1.1",
+    "vue-tsc": "^0.3.0",
     "weixin-js-sdk": "^1.6.0"
   }
 }

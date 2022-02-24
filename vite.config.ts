@@ -1,6 +1,7 @@
+// @ts-nocheck （不让tslint检查）
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
-import path = require('path');
+import * as path from 'path';
 //按需加载
 import Components from 'unplugin-vue-components/vite';
 import { VantResolver } from 'unplugin-vue-components/resolvers';
@@ -28,7 +29,16 @@ console.log('isProd:', isProd, '\r\nmode:', mode);
 export default defineConfig({
   base: basePath,
   plugins: [
-    vue(),
+    vue({
+      template: {
+        compilerOptions: {
+          isCustomElement: (tagName: string) => {
+            //注册【sote-】开头的元素为自定义元素
+            return tagName.startsWith('sote-');
+          }
+        }
+      }
+    }),
     Components({
       // 研究配置
       // ui库解析器，也可以自定义
