@@ -1,0 +1,34 @@
+{
+  "name": "a-quick-start",
+  "version": "0.0.0",
+  "scripts": {
+    "dev": "vite --mode development",
+    "serve:dev": "vite --mode development",
+    "serve:staging": "vite --mode staging",
+    "serve:prod": "vite --mode production",
+    "build:dev": "vue-tsc --noEmit && vite build --mode development",
+    "build:staging": "vue-tsc --noEmit && vite build --mode staging",
+    "build:prod": "vue-tsc --noEmit && vite build --mode production",
+    "preview:dev": "vite preview --mode development",
+    "preview:staging": "vite preview --mode staging",
+    "preview:prod": "vite preview --mode production"
+  },
+  "dependencies": {
+    "axios": "^0.26.0",
+    "sote-tools": "^1.0.6",
+    "vant": "^3.4.5",
+    "vue": "^3.2.31",
+    "vue-router": "^4.0.12",
+    "vuex": "^4.0.2"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "^2.2.2",
+    "sass": "^1.49.8",
+    "typescript": "^4.5.5",
+    "unplugin-vue-components": "^0.17.20",
+    "vite": "^2.8.4",
+    "vite-plugin-html": "^3.0.6",
+    "vue-tsc": "^0.31.4",
+    "weixin-js-sdk": "^1.6.0"
+  }
+}
