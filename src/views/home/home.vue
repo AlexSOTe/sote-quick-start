@@ -2,6 +2,7 @@
 <template>
   <div class="home">
     home
+    <img src="/static/img/icon_no_data.png" alt="Alternate Text" />
   </div>
 </template>
 
