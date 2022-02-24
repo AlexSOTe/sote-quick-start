@@ -21,7 +21,7 @@ const mode = GetViteMode();
 
 let i = 0;
 
-const basePath = '/static/activityVue3/';
+const basePath = '/static/aQuickStart/';
 const isProd = mode === 'production';
 console.log('isProd:', isProd, '\r\nmode:', mode);
 
@@ -64,7 +64,7 @@ export default defineConfig({
     port: 4200,
   },
   build: {
-    outDir: 'dist/phoneRecovery',
+    outDir: 'dist/aQuickStart',
     terserOptions: {
       compress: {
         //生产环境时移除console
