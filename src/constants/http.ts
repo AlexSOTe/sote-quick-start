@@ -1,5 +1,4 @@
 import axios from 'axios';
-import { Toast } from 'vant';
 import { entryUrlQuery } from '../utils/tools';
 const token = entryUrlQuery.token;
 // 添加请求拦截器
@@ -26,7 +25,8 @@ axios.interceptors.response.use(
     const resObj = response && response.data ? response.data : {};
     const resBody = resObj.responseBody;
     if (resBody.code !== '1') {
-      Toast.fail(resBody.message);
+      // TODO 这里可以使用UI库的弹窗提示
+      console.error(resBody.message);
     }
     return resBody;
   },

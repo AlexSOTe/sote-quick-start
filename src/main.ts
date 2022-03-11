@@ -3,13 +3,10 @@ import App from './App.vue';
 import NoToken from './components/shared/NoToken.vue';
 import router from './router/router';
 import { store } from './store';
-import 'vant/lib/index.css';
 import './assets/style/global.scss';
-import './assets/style/vant.cover.scss';
 import { CheckHasToken } from './utils/tools';
 
-let EntryComponent = CheckHasToken() ? App : NoToken;
-const app = createApp(EntryComponent);
+const app = createApp(App);
 app.use(router);
 app.use(store);
 app.mount('#app');

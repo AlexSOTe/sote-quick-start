@@ -1,4 +1,3 @@
-// @ts-nocheck （不让tslint检查）
 import { defineConfig } from 'vite';
 import vue from '@vitejs/plugin-vue';
 import * as path from 'path';
@@ -19,9 +18,7 @@ function GetViteMode() {
 
 const mode = GetViteMode();
 
-let i = 0;
-
-const basePath = '/static/aQuickStart/';
+const basePath = '/';
 const isProd = mode === 'production';
 console.log('isProd:', isProd, '\r\nmode:', mode);
 
@@ -73,17 +70,12 @@ export default defineConfig({
       },
     },
     chunkSizeWarningLimit: 1024, //单个文件限制大小
-    rollupOptions: {
-      output: {
-        manualChunks(path) {
-          //拆分constants里面的数据
-          const flag = '/src/constants/';
-          if (path.includes(flag)) {
-            const nameStr = `${i++}_${new Date().getTime().toString()}`;
-            return nameStr;
-          }
-        }
+  },
+  css: {
+    preprocessorOptions: {
+      scss: {
+        charset: false,
       }
     }
-  },
+  }
 });

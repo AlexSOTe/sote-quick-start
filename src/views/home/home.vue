@@ -11,7 +11,6 @@
   import { useRouter, useRoute } from 'vue-router';
   import { bridgeInterface } from "../../utils/bridgeInterface";
   import { TProjectEntryQuery } from '../../constants/types';
-  import { Toast } from 'vant';
 
 
   const router = useRouter();

@@ -10,23 +10,17 @@
       </van-nav-bar>
     </div>-->
     <div class="pages">
-      <!--<router-view v-slot="{ Component }">
+      <router-view v-slot="{ Component }">
         <keep-alive>
           <component :is="Component" v-if="route.meta.keepAlive" />
         </keep-alive>
         <component :is="Component" v-if="!route.meta.keepAlive" />
-      </router-view>-->
-      <router-view></router-view>
+      </router-view>
     </div>
   </div>
 </template>
 
 <script setup lang="ts">
-  /**
-   * 项目入口参数（项目入口参数）：
-   * ostype、token、userId
-   */
-
   import { useRoute, useRouter } from "vue-router";
   import { onMounted, watch } from 'vue';
   import { store } from './store/index';
