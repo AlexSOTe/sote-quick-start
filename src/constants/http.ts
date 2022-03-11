@@ -1,12 +1,10 @@
 import axios from 'axios';
-import { entryUrlQuery } from '../utils/tools';
-const token = entryUrlQuery.token;
 // 添加请求拦截器
 axios.interceptors.request.use(
   function (config: any) {
     // 在发送请求之前做些什么
     config.headers = {
-      token: token,
+      token: 'fake token',
     };
     return config;
   },

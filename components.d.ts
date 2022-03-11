@@ -4,9 +4,6 @@
 
 declare module 'vue' {
   export interface GlobalComponents {
-    APagination: typeof import('ant-design-vue/es')['Pagination']
-    NoToken: typeof import('./src/components/shared/NoToken.vue')['default']
-    VanEmpty: typeof import('vant/es')['Empty']
   }
 }
 

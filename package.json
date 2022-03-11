@@ -1,14 +1,19 @@
 {
-  "name": "a-quick-start",
+  "name": "sote_cli_project_name",
   "version": "0.0.0",
+  "author": "sote_cli_auth_name",
+  "authorEmail": "sote_cli_auth_email",
   "scripts": {
     "dev": "vite --mode development",
+
     "serve:dev": "vite --mode development",
     "serve:staging": "vite --mode staging",
     "serve:prod": "vite --mode production",
+
     "build:dev": "vue-tsc --noEmit && vite build --mode development",
     "build:staging": "vue-tsc --noEmit && vite build --mode staging",
     "build:prod": "vue-tsc --noEmit && vite build --mode production",
+
     "preview:dev": "vite preview --mode development",
     "preview:staging": "vite preview --mode staging",
     "preview:prod": "vite preview --mode production"

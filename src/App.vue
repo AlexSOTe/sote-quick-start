@@ -1,14 +1,6 @@
 
 <template>
   <div class="App">
-    <!--<div class="navBar">
-      <van-nav-bar :title="store.getters.getDocumentTitle||'手机估价'" left-arrow>
-        <template #left>
-        </template>
-        <template #right>
-        </template>
-      </van-nav-bar>
-    </div>-->
     <div class="pages">
       <router-view v-slot="{ Component }">
         <keep-alive>
