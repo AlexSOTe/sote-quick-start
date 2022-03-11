@@ -9,3 +9,4 @@
 |sote_cli_api_url_dev|测试环境api链接|
 |sote_cli_api_url_staging|预生产环境api链接|
 |sote_cli_api_url_prod|生产环境api链接|
+|sote_cli_api_base_url|项目部署的url|
