@@ -18,7 +18,7 @@ function GetViteMode() {
 
 const mode = GetViteMode();
 
-const basePath = '/sote_cli_api_base_url';
+const basePath = '/sote_cli_api_base_url/';
 const isProd = mode === 'production';
 console.log('isProd:', isProd, '\r\nmode:', mode);
 
@@ -61,7 +61,7 @@ export default defineConfig({
     port: 4200,
   },
   build: {
-    outDir: 'dist/sote_cli_api_base_url',
+    outDir: 'dist/sote_cli_api_base_url/',
     terserOptions: {
       compress: {
         //生产环境时移除console
