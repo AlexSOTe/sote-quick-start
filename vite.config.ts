@@ -3,7 +3,7 @@ import vue from '@vitejs/plugin-vue';
 import * as path from 'path';
 //按需加载
 import Components from 'unplugin-vue-components/vite';
-import { VantResolver } from 'unplugin-vue-components/resolvers';
+import { AntDesignVueResolver } from 'unplugin-vue-components/resolvers';
 //给html.index添加模板变量解析
 import { minifyHtml, injectHtml } from 'vite-plugin-html';
 
@@ -40,7 +40,7 @@ export default defineConfig({
       // 研究配置
       // ui库解析器，也可以自定义
       resolvers: [
-        VantResolver(),
+        AntDesignVueResolver(),
       ],
     }),
     minifyHtml(),

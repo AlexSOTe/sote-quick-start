@@ -1,10 +1,9 @@
 import { createApp } from 'vue';
 import App from './App.vue';
-import NoToken from './components/shared/NoToken.vue';
 import router from './router/router';
 import { store } from './store';
+import 'ant-design-vue/dist/antd.css';
 import './assets/style/global.scss';
-import { CheckHasToken } from './utils/tools';
 
 const app = createApp(App);
 app.use(router);

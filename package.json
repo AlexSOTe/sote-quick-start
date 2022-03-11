@@ -14,6 +14,7 @@
     "preview:prod": "vite preview --mode production"
   },
   "dependencies": {
+    "ant-design-vue": "^2.2.8",
     "axios": "^0.24.0",
     "sote-tools": "^1.0.6",
     "vue": "^3.2.16",
