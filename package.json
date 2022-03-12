@@ -2,7 +2,7 @@
   "name": "sote_cli_project_name",
   "version": "0.0.0",
   "author": "sote_cli_auth_name",
-  "authorEmail": "sote_cli_auth_email",
+  "email": "sote_cli_auth_email",
   "scripts": {
     "dev": "vite --mode development",
 
