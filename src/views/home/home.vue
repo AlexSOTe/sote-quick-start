@@ -1,22 +1,19 @@
-
 <template>
   <div class="home">
     home
-    <img src="/static/img/icon_no_data.png" alt="Alternate Text" />
   </div>
 </template>
-
 <script setup lang="ts">
-  import { onMounted, reactive, ref, computed } from 'vue';
-  import { useRouter, useRoute } from 'vue-router';
-
-
-  const router = useRouter();
+  import { ref, reactive, onMounted } from 'vue';
+  import { useRoute, useRouter } from 'vue-router';
   const route = useRoute();
+  const router = useRouter();
   const query = route.query;
 
+  onMounted(() => {
+    console.log('onMounted home');
+  });
 </script>
-
 <style scoped lang="scss">
   .home {
   }
